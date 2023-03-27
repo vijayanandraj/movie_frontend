@@ -1,1 +1,13 @@
-Just a note to check the commit of github. This can make life easy, else we need to rely on email route.
+Just a note to check the commit of github. This can make life easy, else we need to rely on email route.'
+
+SELECT 
+  s.id AS survey_id,
+  s.title AS survey_title,
+  q.id AS question_id,
+  q.text AS question_text,
+  ao.id AS answer_option_id,
+  ao.text AS answer_option_text
+FROM survey s
+JOIN question q ON s.id = q.survey_id
+JOIN answer_option ao ON q.id = ao.question_id
+ORDER BY s.id, q.id, ao.id;
