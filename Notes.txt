@@ -11,3 +11,94 @@ FROM survey s
 JOIN question q ON s.id = q.survey_id
 JOIN answer_option ao ON q.id = ao.question_id
 ORDER BY s.id, q.id, ao.id;
+
+Java
+
+a. Do class, method, and variable names follow Java naming conventions?
+b. Is the code consistently formatted, with proper indentation and line breaks?
+c. Is the code well-documented with meaningful comments and JavaDoc annotations?
+d. Is the code organized into appropriate packages and classes?
+e. Are exceptions properly caught, logged, and handled?
+f. Has code duplication been minimized through refactoring and modular design?
+g. Do unit tests cover key functionality and edge cases, and do they pass?
+h. Have potential performance bottlenecks been identified and optimized?
+
+Spring Boot
+
+a. Are Spring Boot annotations used correctly (e.g., @RestController, @Service, @Autowired)?
+b. Are dependencies properly injected and managed?
+c. Are application configuration files (application.properties or application.yml) correct and consistent?
+d. Do API endpoints follow RESTful principles and use appropriate HTTP methods and status codes?
+e. Are Spring Boot's exception handling mechanisms used effectively?
+f. Has authentication, authorization, and other security measures been implemented?
+g. Are appropriate logging levels used, and is sensitive information not logged?
+
+JPA (Java Persistence API)
+
+a. Are entities properly defined, annotated, and are relationships correctly mapped (e.g., @Entity, @Table, @Id, @ManyToOne)?
+b. Do repositories extend JpaRepository or other relevant interfaces and are used correctly?
+c. Is the appropriate fetching strategy used for entity relationships (lazy vs. eager loading)?
+d. Are transaction boundaries properly defined and managed?
+e. Have queries been optimized for performance?
+f. Are validation constraints defined and used correctly (e.g., @NotNull, @Size, @Pattern)?
+g. Is cache configuration and usage optimized for performance?
+
+Cloud Readiness
+
+a. Is the codebase maintained in a version control system and deployable to multiple environments?
+b. Does the application follow a modular architecture?
+c. Are dependencies declared in a manifest file and properly isolated in the build artifact?
+d. Are system-level packages avoided for better portability?
+e. Is configuration separated from code and stored in environment variables or external configuration services?
+f. Are there no hard-coded values in the codebase?
+g. Are backing services loosely coupled and easily replaceable or updated?
+h. Is connection management implemented properly (e.g., connection pooling, retries)?
+i. Are build, release, and run stages separated in the CI/CD pipeline?
+j. Are build artifacts immutable and uniquely identifiable?
+k. Are application processes stateless and share-nothing?
+l. Can the application handle concurrent requests and horizontal scaling?
+m. Can the application expose its services through a designated port without relying on runtime injection?
+n. Can the application start and stop quickly?
+o. Can the application handle failures and resource unavailability gracefully?
+p. Are development, staging, and production environments as similar as possible?
+q. Is the deployment process consistent across all environments?
+r. Are logs treated as event streams and sent to a central logging service?
+s. Are logs structured for easier analysis and processing?
+t. Does the application expose relevant metrics and integrate with monitoring and observability tools?
+u. Is distributed tracing implemented to track request flows across multiple services?
+v. Is the application designed to scale horizontally?
+w. Is the application fault-tolerant and able to handle the failure of backing services or instances?
+
+These yes/no questions can help you perform a thorough
+
+
+Java
+
+a. Naming conventions: Are classes, methods, and variables named following Java naming conventions, including proper use of camelCase and PascalCase?
+b. Code formatting: Is the code consistently formatted with proper indentation, line breaks, and braces placement?
+c. Comments and documentation: Are classes, methods, and complex code blocks documented with meaningful comments and JavaDoc annotations?
+d. Code organization: Are classes, interfaces, and packages organized logically, and do they adhere to the Single Responsibility Principle?
+e. Error handling: Are exceptions caught, logged, and handled appropriately? Are custom exceptions used where necessary?
+f. Code duplication: Is code duplication minimized through refactoring, using design patterns, and adhering to the DRY (Don't Repeat Yourself) principle?
+g. Unit testing: Do unit tests cover key functionality, edge cases, and exceptions, and do they pass?
+h. Performance and optimization: Are potential performance bottlenecks identified and optimized, including proper use of data structures and algorithms?
+i. Object-Oriented Programming (OOP) principles: Are OOP principles, such as inheritance, encapsulation, and polymorphism, used effectively?
+j. Interface vs. implementation: Are interfaces used to define contracts, and are multiple implementations supported as needed?
+k. Proper use of access modifiers: Are access modifiers (public, private, protected, and package-private) used correctly to control visibility and encapsulation?
+l. Code reusability and modularity: Are utility classes, libraries, and common functionality properly modularized and reusable?
+m. Proper use of Java standard libraries: Are Java standard libraries (e.g., java.util, java.io) used effectively, and are deprecated APIs avoided?
+n. Threading and concurrency: Are synchronization, thread safety, and concurrency issues handled correctly?
+o. Resource management: Are resources, such as files, streams, and database connections, properly managed and closed when no longer needed?
+p. Validations and assertions: Are input validations and assertions used effectively to catch potential issues early in the execution flow?
+q. Dependency management: Are dependencies managed using a build tool (e.g., Maven, Gradle), and are transitive dependencies and conflicts resolved appropriately?
+r. Java version compatibility: Is the code compatible with the targeted Java version, and does it leverage relevant features and improvements of that version?
+
+
+
+
+
+
+Regenerate response
+
+
+Regenerate response
